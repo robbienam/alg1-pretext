@@ -4,36 +4,65 @@
   
   <section xml:id="sec-1-1-numerical-expressions">
     <title>Numerical Expressions</title>
-    <p>A <term>numerical expression</term> is an expression formed by combining <em>numbers</em> using the operations of arithmetic. Numerical expressions may also contain grouping symbols like parentheses ().</p>
-    <example xml:id="example-numerical-expression">
-       <p>Consider the following numerical expressions:
+    <p>Suppose your kitchen sink has sprung a leak. You hire a plumber who charges a flat $50 service fee plus $75 per hour of labor. If the plumber works for 3 hours, how much will you owe?
+    </p>
+        
+    <p>To calculate the total cost, you could write the following mathematical expression:
+        <men xml:id="plumber-cost-numerical-expression">50 + 75 \cdot 3</men>
+        Evaluating this gives the total cost of $275.
+    </p>
+
+    <p>The above expression <xref ref="plumber-cost-numerical-expression"/> is an example of a <term>numerical expression</term>. In this section, we will explore numerical expressions and the rules for evaluating them.
+    </p>
+
+    <definition xml:id="def-numerical-expression">
+        <statement>
+            <p>A <term>numerical expression</term> is an expression formed by combining <em>numbers</em> using the operations of arithmetic. Numerical expressions may also contain grouping symbols like parentheses (...).</p>
+        </statement>
+    </definition>
+     <example xml:id="example-numerical-expressions">
+       <p>The following are additional examples of numerical expressions:
         <md>
-            <mrow>&amp; 5 + 3 \div 2</mrow>
-            <mrow>&amp; 10 + 7 - 4 \cdot 5 \div 2</mrow>
+            <mrow>&amp; 5 + 3</mrow>
+            <mrow>&amp; 10 + 7 \cdot 2</mrow>
             <mrow>&amp; (8-3)^2 + 6 \div 3</mrow>
             <mrow>&amp; 2 \cdot 3 + 4 \cdot 5 - 6 \div 2</mrow>
         </md>
         </p>
     </example>
 
-    <p>Like all mathematical language, every numerical expression has a precise meaning. In this case, the expression's meaning is determined by the <term>order of operations</term>. These rules specify the proper order for combining the numbers in the expression. In this way, every numerical expression can be simplified or evaluated to a single number value.</p> 
+    <p>Like all mathematical language, numerical expressions are powerful because they have a precise meaning that is independent of any particular problem they may model.
+    </p>    
+    <p>For example, suppose you were to hand your friend a slip of paper with just the above expression <xref ref="plumber-cost-numerical-expression"/> written on it. Without knowing anything about your plumbing problem, your friend should still be able to interpret and evaluate this expression to get the value of 275.
+    </p>    
+    <p>That is the power of mathematical language: it allows us to communicate ideas precisely and unambiguously.
+    </p>  
+    <p>Specifically, to correctly interpret a numerical expression requires that we apply the <term>order of operations</term>.
+        These rules specify the proper order for combining the numbers that make up such expressions using the given arithmetic operations.
+        In this way, every numerical expression can be evaluated to a unique value. 
+    </p> 
     <definition xml:id="def-order-of-operations">
         <statement>
             <p>
-                The <term>order of operations</term> is the set of rules that determines the proper order in which operations must be performed to evaluate a numerical expression. The order is as follows:
-
+                The <term>order of operations</term> gives the proper order to evaluate any numerical expression:
+                <ol>
+                    <li>First, evaluate any expressions inside parentheses (...) and other grouping symbols. Each expression within grouping symbols should be evaluated as if it were a separate expression using the same order of operations.</li>
+                    <li>Then, evaluate exponents (powers and roots).</li>
+                    <li>Then, perform multiplication and division from left to right.</li>
+                    <li>Then, perform addition and subtraction from left to right.</li>
+                </ol>
+                The above order of operations can be remembered using the acronym <em>PEMDAS</em>, which stands for Parentheses, Exponents, Multiplication/Division, Addition/Subtraction.
             </p>
         </statement>
     </definition>
     <example>
-        <p> The numerical expressions above evaluate as follows:
+        <p> Use the order of operations to verify that the numerical expressions in <xref ref="example-numerical-expressions"/> above evaluate as follows:
         <md>
             <mrow>&amp; 5 + 3 \div 2 = 4</mrow>
             <mrow>&amp; 10 + 7 - 4 \cdot 5 \div 2 = 7</mrow>
             <mrow>&amp; (8-3)^2 + 6 \cdot 1 = 27 </mrow>
             <mrow>&amp; 2 \cdot 3 + 4 \cdot 5 - 6 \div 2 = 23</mrow>
-        </md>
-           
+        </md> 
         </p>
     </example>
 
@@ -41,7 +70,11 @@
 
   <section xml:id="sec-1-2-algebraic-expressions">
     <title>Algebraic Expressions</title>
-    <p>An <term>algebraic expression</term> is an expression formed by combining terms that are either <em>numbers</em> or the <em>product</em> of a number with one or more <em>variables</em>.</p>
+    <definition xml:id="def-algebraic-expression">
+        <statement>
+            <p>An <term>algebraic expression</term> is an expression formed by combining terms that are either <em>numbers</em> or the <em>product</em> of a number with one or more <em>variables</em>.</p>
+        </statement>
+    </definition>
     <note>
         <p>Algebraic expressions are thus a <term>generalization</term> of numerical expressions: a numerical expression is an algebraic expressionwithout that happens not to have any variable terms.</p>
     </note>
